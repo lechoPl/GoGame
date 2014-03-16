@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Projekt_GO" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\Projekt_GO" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\Projekt_GO" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-mms-bitfields" />
+			<Add option="-Wall" />
+			<Add directory="C:\GTK\2.0\include" />
+			<Add directory="C:\GTK\2.0\include\gtk-2.0" />
+			<Add directory="C:\GTK\2.0\include\cairo" />
+			<Add directory="C:\GTK\2.0\include\gdk" />
+			<Add directory="C:\GTK\2.0\include\glib-2.0" />
+			<Add directory="C:\GTK\2.0\lib\glib-2.0\include" />
+			<Add directory="C:\GTK\2.0\include\pango-1.0" />
+			<Add directory="C:\GTK\2.0\lib\gtk-2.0\include" />
+			<Add directory="C:\GTK\2.0\include\atk-1.0" />
+		</Compiler>
+		<Linker>
+			<Add library="gtk-win32-2.0" />
+			<Add library="gobject-2.0" />
+			<Add library="glib-2.0" />
+			<Add directory="C:\GTK\2.0\lib" />
+		</Linker>
+		<Unit filename="game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="game.h" />
+		<Unit filename="interfejs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interfejs.h" />
+		<Unit filename="interfejs_NowaGra.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interfejs_Rozgrywka.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wczytaj_zapisz.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wczytaj_zapisz.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
